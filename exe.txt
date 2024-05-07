@@ -1,0 +1,18 @@
+id: INT - PRIMARYKEY
+
+name: VARCHAR(75)
+
+buy_year: YEAR - NOTNULL - INDEX 
+
+sell_date: DATETIME - NULL
+
+condition: VARCHAR(255) - DEFAULT("Good condition, no flaws")
+
+old_owner: VARCHAR(75) - NOTNULL
+
+buy_price: DECIMAL - NOTNULL - INDEX
+
+sell_price: DECIMAL - DEFAULT(0)
+
+notes: VARCHAR(255) - NULL
+
